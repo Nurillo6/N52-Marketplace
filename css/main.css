@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2B2B2B;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1250px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.site-header {
+  padding: 20px 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo-link {
+  display: inline-block;
+}
+
+.header__links-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.navbar__list {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.navbar__item + .navbar__item {
+  margin-left: 10px;
+}
+
+.navbar__link {
+  display: inline-block;
+  position: relative;
+  padding: 20px;
+  transition: color 0.5s;
+  overflow-x: hidden;
+  color: #FFF;
+  text-align: center;
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+.navbar__link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: -200%;
+  transition: left 0.5s;
+  margin: 0 auto;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+.navbar__link:hover::before {
+  left: 0;
+  background-color: #A259FF;
+}
+.navbar__link:hover {
+  color: #A259FF;
+}
+
+.header__sign-up-link {
+  width: 152px;
+  padding: 18px 0;
+  gap: 12px;
+  margin-left: 10px;
+  border-radius: 20px;
+  background-color: #A259FF;
+  border: 2px solid transparent;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  text-align: center;
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+.header__sign-up-link:hover {
+  background-color: transparent;
+  border: 2px solid #A259FF;
+  color: #A259FF;
+}/*# sourceMappingURL=main.css.map */
